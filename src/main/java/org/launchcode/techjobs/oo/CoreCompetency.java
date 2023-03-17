@@ -2,24 +2,14 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class CoreCompetency {
+public class CoreCompetency extends JobFields{
 
-    private int id;
-    private static int nextId = 1;
-    private String value;
-
-
-
-
-
-    public CoreCompetency() {
-        this.id = nextId;
-        nextId++;
-    }
+    //private int id;
+    //private static int nextId = 1;
+    //private String value;
 
     public CoreCompetency(String value) {
-        this();
-        this.value = value;
+        super(value);
     }
 
     // Custom toString, equals, and hashCode methods:
